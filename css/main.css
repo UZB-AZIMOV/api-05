@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 100%;
+    max-width: 1248px;
+    padding: 0 16px;
+    margin: auto
+}
+
+
+.btn__box{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+.btn{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.btn:hover{
+    background-color: blue;
+    color: black;
+}
+
+.skeleton,
+.wrapper {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skeleton__item,
+.card {
+    width: 300px;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.skeletton__images {
+    width: 100%;
+    height: 250px;
+    background: #ddd;
+    border-radius: 14px;
+}
+
+.skeleton__line {
+    width: 100%;
+    height: 30px;
+    background: #ddd;
+    margin-top: 14px;
+    border-radius: 6px;
+
+}
+
+.skeleton__line:nth-child(3) {
+    width: 80%;
+}
+
+.skeleton__line:nth-child(4) {
+    width: 60%;
+}
+
+.skelete__inme {
+    background: linear-gradient(90deg, #ddd, #f7f7f7, #ddd);
+    background-size: 200%;
+    animation: skeleton 1s linear 0s infinite;
+}
+
+@keyframes skeleton {
+    to {
+        background-position: 200%;
+    }
+
+}
+
+.card {
+    margin-top: 30px;
+    width: 300px;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow: hidden;
+
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    border-radius: 14px;
+}
+
+h3 {
+    color: #8B8E99;
+    cursor: pointer;
+}
+
+.desck {
+    font-size: 16px;
+    color: #0009;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.buy{
+    padding: 5px 20px;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    background: blue;
+    color: #fff;
+    margin-bottom:10px;
+}
+
+.semore {
+    width: 200px;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+    cursor: pointer;
+    border: none    ;
+    margin-bottom: 40px
+}
+
+.collection {
+    display: flex;
+    list-style: none;
+    overflow: auto;
+    padding: 10px 50px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.icon{
+    display: none;
+}
+.collection::-webkit-scrollbar{
+    display: none;
+  }
+
+.price{
+    padding: 10px;
+}
+
+.buy{
+    padding: 10px;
+}
+
+.collection{
+    display: flex;
+    overflow: auto;
+    list-style: none;
+    padding: 10px 50px;
+    gap: 20px;
+}
+
+.item{
+    cursor: pointer;
+    background: #ddddddea;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 7px 10px;
+    transition: 1s;
+}
+.item data{
+    white-space: nowrap;
+}
+.item:hover{
+    background-color: black;
+    color: white;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media (max-width:760px) {
+    .card{
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width:500px) {
+.wrapper{
+    padding: 20px;
+}
+    .card{
+        width: 100%;
+    }
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1248px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+span, a, li{
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+.title{
+    font-size: 42px;
+    font-weight: 800;
+    margin: 50px 0;
+    text-align: center;
+}
+::-webkit-scrollbar{
+    display: none;
+  }
+button{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 30px 10px 30px;
+    background-color: gold;
+    border: none;
+    font-weight: 600;
+    color: red ;
+    border-radius: 5px;
+    transition: 1s;
+    
+  }
+  button:active{
+    transform: scale(.1);
+  }
+  .imgs{
+    width: 100%;
+    height: 560px;
+  }
+
+    .img{
+    width: 290px;
+height: 350px;
+  }
+.s{
+  display: none;
+}
+  .butbag{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+  .wrapper{
+    margin-top: 20px;
+    display: flex;
+    overflow: auto;
+  }
+
+
+
+  
+.royxat{
+  margin: 30px 0 50px 0;
+  text-align: center;
+  font-size: 65px;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+.box{
+  width: 60%; 
+text-align: left;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.693);
+  padding: 30px 20px;
+margin: auto;
+}
+.bag{
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height:50px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+input{
+  height: 50%;
+  width: 50%;
+  padding: 5px 0;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.hr{
+  width: 100%;
+  background-color: black;
+  height: 2px;
+  margin-top: 1px;
+  
+}
+.but{
+  padding-top: 10px;
+}
+.btnbag{
+  width: 100%;
+  text-align: center;
+}
+.btnn{
+  padding-top: 10px;
+  margin-top: 40px;
+}
+
+
+.collection{
+  margin-top: 400px;
+margin: auto;
+}
+
+.button{
+  padding-top: 10px;
+}
+
+
+@media ( max-width:750px){
+.box{
+  width: 90%; 
+}
+input{
+  width: 100%;
+}
+.imgs{
+  display: none;
+}
+.s{
+  display: block;
+}
+}
